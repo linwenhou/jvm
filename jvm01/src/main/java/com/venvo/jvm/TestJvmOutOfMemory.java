@@ -13,11 +13,10 @@ import java.util.UUID;
  */
 public class TestJvmOutOfMemory {
 
-
-     //参数如下:
-     //‐Xms8m ‐Xmx8m ‐XX:+HeapDumpOnOutOfMemoryError     vm options
-    //向集合中添加100万个字符串，每个字符有100个UUID组成
     public static void main(String[] args) {
+        //参数如下:
+        //‐Xms8m ‐Xmx8m ‐XX:+HeapDumpOnOutOfMemoryError     vm options
+        //向集合中添加100万个字符串，每个字符有100个UUID组成
         List<String> list = new ArrayList<String>();
         for (int i = 0; i < 1000000; i++) {
             String str = "";
