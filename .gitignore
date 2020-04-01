@@ -41,3 +41,6 @@ dist
 */*.log*
 dep.txt
 *.rdb
+.index
+.zip
+.threads
